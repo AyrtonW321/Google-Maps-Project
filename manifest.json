@@ -1,8 +1,8 @@
 {
     "manifest_version": 2,
-    "name": "Google Maps",
+    "name": "Project",
     "version": "1.0",
-    "description": "A Google Maps extension!",
+    "description": "Project",
     "icons": {
         "128": "/images/icon128.png",
         "48": "/images/icon48.png",

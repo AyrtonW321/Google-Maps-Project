@@ -65,7 +65,7 @@ body {
   width: 500px;
   border-radius: 5px;
   padding: 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
@@ -86,7 +86,7 @@ button {
   margin-bottom: 10px;
   border: 1px solid #ddd;
   border-radius: 3px;
-  box-sizing: border-box; /* Include border in width calculation */
+  box-sizing: border-box;
 }
 
 button {
@@ -99,7 +99,6 @@ button:hover {
   opacity: 0.8;
 }
 
-/* Add some space around the input field */
 input {
   padding-left: 15px;
   padding-right: 15px;

@@ -12,22 +12,26 @@
         <h1 class="header">Focus Timer</h1>
 
         <div class="container">
-            <button onclick="">10:00</button>
-            <button onclick="">20:00</button>
-            <button onclick="">30:00</button>
+            <div class="presetTimes">
+                <button onclick="">Pomadoro</button>
+                <button onclick="">Short Break</button>
+                <button onclick="">Long Break</button>
+            </div>
             <label for="minutes">Enter Time (minutes):</label>
             <input type="number" id="minutes" min="1" required>
-            <button id="startTimer" onclick="startTimer()">Start Countdown</button>
-            <p id="timer">00:00</p>
+            <div id="timer">00:00</div>
+            <button id="startTimer" onclick="startTimer()">Start</button>
         </div>
 
-        <h1>What are we working on today?</h1>
-        <form id="task-form">
-          <label for="new-task">New Task:</label>
-          <input type="text" id="new-task" required>
-          <button type="button" onclick="addTask()">Add New Task</button>
-        </form>
-        <ul id="task-list"></ul>
+        <div class="tasks">
+            <h1>Tasks:</h1>
+            <form id="task-form">
+            <label for="new-task">New Task:</label>
+            <input type="text" id="new-task" required>
+            <button type="button" onclick="addTask()">Add New Task</button>
+            </form>
+            <ul id="task-list"></ul>
+        </div>
 
     </body>
 

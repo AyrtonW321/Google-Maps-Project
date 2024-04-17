@@ -52,6 +52,7 @@ h1 {
 
 .presetTimes>button:hover {
     background-color: #245578;
+    text-decoration: underline;
 }
 
 #timer{

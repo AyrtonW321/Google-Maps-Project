@@ -25,10 +25,8 @@ This is a simple web application built with HTML, CSS, and JavaScript that combi
 
 **How to Use:**
 
-1. **To-Do List:**
-    ... (Replace with detailed instructions on using the to-do list functionality)
-2. **Pomodoro Timer:**
-    ... (Replace with detailed instructions on using the pomodoro timer functionality)
+1. **To-Do List:** Include tasks to complete
+2. **Pomodoro Timer:** Set the amount of time you want, and start studying
 
 **Note:**
 

@@ -5,7 +5,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="styles.css">
-        <title>Ayrton's To-Do-List</title>
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css' rel='stylesheet'>
+        <title>Study Timer</title>
     </head>
 
     <body>
@@ -13,14 +14,15 @@
 
         <div class="container">
             <div class="presetTimes">
-                <button onclick="pomodoro();">Pomadoro</button>
-                <button onclick="shortBreak();">Short Break</button>
-                <button onclick="longBreak();">Long Break</button>
+                <button id="pomodoro">Pomadoro</button>
+                <button id="shortBreak">Short Break</button>
+                <button id="longBreak">Long Break</button>
             </div>
-            <label for="minutes">Enter Time (minutes):</label>
-            <input type="number" id="minutes" min="1" required>
-            <p id="timer">00:00</p>
-            <button id="startTimer" onclick="startTimer()">Start</button>
+            <p id="countdown">00:00</p>
+            <div class="controls">
+                <button id="startStop">Start</button>
+                <button class="reset-button" id="reset"><i class="bx bx-reset"></i></button>
+            </div>
         </div>
 
         <div class="tasks">

@@ -55,7 +55,7 @@ h1 {
     text-decoration: underline;
 }
 
-#timer{
+#countdown {
     text-align: center;
     font-size: 100px;
     font-weight: bold;
@@ -63,18 +63,38 @@ h1 {
     margin-bottom: 20px;
 }
 
-#startTimer {
-  background-color: white;
-  color: #397097;
-  font-weight: bold;
-  font-size: 30px;
-  padding: 0px 12px;
-  box-shadow: rgb(235, 235, 235) 0px 6px 0px;
-  border-radius: 6px;
-  border: none;
-  height: 55px;
-  width: 200px;
-  cursor: pointer;
+#startStop {
+    background-color: white;
+    color: #397097;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 0px 12px;
+    box-shadow: rgb(235, 235, 235) 0px 6px 0px;
+    border-radius: 6px;
+    border: none;
+    height: 55px;
+    width: 200px;
+    cursor: pointer;
+}
+
+.reset-button {
+    background-color: white;
+    border: none;
+    border-radius: 6px;
+    box-shadow: rgb(235, 235, 235) 0px 4px 0px;
+    padding: 4px 4px 4px 4px;
+    cursor: pointer;
+    font-size: 50px;
+    height: 58px;
+    margin-left: 10px;
+    vertical-align: middle;
+    color: #397097;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
 }
 
 input {
@@ -91,7 +111,7 @@ form {
     margin-bottom: 20px;
 }
 
-#addTask{
+#addTask {
     margin: 5px;
     padding: 5px 10px;
     border: none;

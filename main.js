@@ -79,6 +79,45 @@ function clickLongBreakButton() {
   startStopButton.innerHTML = "Start";
 }
 
+function tasks(){
+  const getTask = document.getElementById("newTask");
+
+  const task = getTask.value.trim();
+
+  if (!task) {
+    alert("Please enter a task!");
+    return;
+  }
+
+  const list = document.getElementById("taskList");
+  const newItem = document.createElement("li");
+
+  const checkbox = document.createElement("input");
+  checkbox.type = "checkbox";
+
+  checkbox.addEventListener("change", function() {
+    this.parentNode.classList.toggle("completed");
+  });
+
+  const taskSpan = document.createElement("span");
+  taskSpan.textContent = task;
+  newItem.appendChild(checkbox);
+  newItem.appendChild(taskSpan);
+
+  const deleteButton = document.createElement("button");
+  deleteButton.textContent = "X";
+
+  deleteButton.addEventListener("click", function() {
+    this.parentNode.remove();
+  });
+
+  newItem.appendChild(deleteButton);
+
+  list.appendChild(newItem);
+
+  getTask.value = "";
+}
+
 startStopButton.addEventListener("click", clickStartStopButton);
 resetButton.addEventListener("click", clickResetButton);
 pomodoroButton.addEventListener("click", clickPomodoroButton);

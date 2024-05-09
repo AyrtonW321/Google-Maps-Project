@@ -133,3 +133,36 @@ form {
     border: 1px solid #ddd;
     border-radius: 3px;
 }
+
+.tasks {
+    margin: 20px;
+}
+
+#taskList {
+    list-style: none;
+    padding: 0;
+}
+
+#taskList li {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+#taskList button{
+    border: none;
+    border-radius: 3px;
+    background-color: white;
+    color: #4d7fa2;
+    padding: 5px 10px;
+}
+
+#taskList input{
+    width: 25px;
+    height: 25px;
+}
+
+.completed span {
+    text-decoration: line-through;
+}

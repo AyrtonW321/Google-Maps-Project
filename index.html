@@ -1,42 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="styles.css">
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css' rel='stylesheet'>
-        <title>Study Timer</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
 
-    <body>
-        <h1 class="header">Focus Timer</h1>
+    <title>Study Timer</title>
+</head>
 
-        <div class="container">
-            <div class="presetTimes">
-                <button id="pomodoro">Pomadoro</button>
-                <button id="shortBreak">Short Break</button>
-                <button id="longBreak">Long Break</button>
-            </div>
-            <p id="countdown">00:00</p>
-            <div class="controls">
-                <button id="startStop">Start</button>
-                <button class="reset-button" id="reset"><i class="bx bx-reset"></i></button>
-            </div>
+<body>
+    <h1 class="header">Focus Timer</h1>
+
+    <div class="container">
+        <div class="presetTimes">
+            <button id="pomodoro">Pomadoro</button>
+            <button id="shortBreak">Short Break</button>
+            <button id="longBreak">Long Break</button>
         </div>
-
-        <div class="tasks">
-            <h1>Tasks:</h1>
-            <form id="taskForm">
-                <label for="newTask">New Task:</label>
-                <input type="text" id="newTask" autocomsplete="off" autocomplete="off">
-                <button type="button" id="addTask" onclick="tasks()">Add New Task</button>
-            </form>
-            <ul id="taskList"></ul>
+        <p id="countdown">00:00</p>
+        <div class="controls">
+            <button id="startStop">Start</button>
+            <button class="reset-button" id="reset"><i class="bx bx-reset"></i></button>
         </div>
+    </div>
 
-    </body>
+    <div class="tasks">
+        <h1>Tasks:</h1>
+        <form id="taskForm">
+            <label for="newTask">New Task:</label>
+            <input type="text" id="newTask" autocomsplete="off" autocomplete="off">
+            <button type="button" id="addTask" onclick="tasks()">Add New Task</button>
+        </form>
+        <ul id="taskList"></ul>
+    </div>
 
-    <script src="main.js"></script>
+</body>
+
+<script src="main.js"></script>
 
 </html>

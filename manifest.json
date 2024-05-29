@@ -1,22 +1,22 @@
 {
     "manifest_version": 3,
-    "name": "Study Timer Extension",
+    "name": "Countdown Timer",
     "version": "1.0",
-    "description": "Study timer. Study better.",
-    "icons": {
-        "128": "/images/icon128.png",
-        "48": "/images/icon48.png",
-        "16": "/images/icon16.png"
+    "description": "A simple countdown timer with tasks",
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": {
+            "16": "images/icon16.png",
+            "48": "images/icon48.png",
+            "128": "images/icon128.png"
+        }
     },
-
-    "action":{
-        "default_icon": "/images/icon16.png",
-        "default_popup": "index.html"
-    },
-    
     "permissions": [
-        "storage",
-        "notifications",
-        "contextMenus"
-    ]
+        "storage"
+    ],
+    "icons": {
+        "16": "images/icon16.png",
+        "48": "images/icon48.png",
+        "128": "images/icon128.png"
+    }
 }
